@@ -13,8 +13,7 @@ class DeviceInfoPlusPage extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'DeviceInfoPlus',
-        documentUrl:
-            'https://plus.fluttercommunity.dev/docs/device_info_plus/usage',
+        documentUrl: 'https://plus.fluttercommunity.dev/docs/device_info_plus/usage',
       ),
       body: Center(
         child: ElevatedButton(
@@ -22,8 +21,7 @@ class DeviceInfoPlusPage extends StatelessWidget {
           onPressed: () async {
             final deviceInfo = DeviceInfoPlugin();
             if (Platform.isAndroid) {
-              await _showDialogForAndroid(
-                  context, await deviceInfo.androidInfo);
+              await _showDialogForAndroid(context, await deviceInfo.androidInfo);
             }
             if (Platform.isIOS) {
               await _showDialogForIos(context, await deviceInfo.iosInfo);
@@ -35,8 +33,7 @@ class DeviceInfoPlusPage extends StatelessWidget {
     );
   }
 
-  Future<void> _showDialogForAndroid(
-      BuildContext context, AndroidDeviceInfo info) async {
+  Future<void> _showDialogForAndroid(BuildContext context, AndroidDeviceInfo info) async {
     return showDialog<void>(
       context: context,
       barrierDismissible: false, // user must tap button!
@@ -65,8 +62,7 @@ class DeviceInfoPlusPage extends StatelessWidget {
     );
   }
 
-  Future<void> _showDialogForIos(
-      BuildContext context, IosDeviceInfo info) async {
+  Future<void> _showDialogForIos(BuildContext context, IosDeviceInfo info) async {
     return showDialog<void>(
       context: context,
       barrierDismissible: false, // user must tap button!

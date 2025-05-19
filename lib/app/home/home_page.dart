@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -16,8 +15,7 @@ class HomePage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final viewModel = ref.watch(homeViewModelProvider);
     final algoliaDataList = AlgoliaIndex.index;
-    final dataList =
-        algoliaDataList.map((e) => AlgoliaSearchIndex.fromMap(e)).toList();
+    final dataList = algoliaDataList.map((e) => AlgoliaSearchIndex.fromMap(e)).toList();
 
     return Scaffold(
         appBar: AppBar(
@@ -26,8 +24,7 @@ class HomePage extends ConsumerWidget {
               icon: Icon(Icons.exit_to_app),
               onPressed: () async {
                 await viewModel.logout();
-                await await Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => WelcomePage()));
+                await await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WelcomePage()));
               }),
           actions: [
             IconButton(
@@ -39,8 +36,7 @@ class HomePage extends ConsumerWidget {
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => AlgoliaPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => AlgoliaPage()));
               },
             ),
           ],

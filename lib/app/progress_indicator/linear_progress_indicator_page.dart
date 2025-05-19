@@ -11,7 +11,6 @@ class LinearProgressIndicatorPage extends StatefulWidget {
 }
 
 class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPage> {
-
   bool _isShow = false;
 
   @override
@@ -19,8 +18,7 @@ class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPag
     return Scaffold(
       appBar: CustomAppBar(
         title: 'LinearProgressIndicator',
-        documentUrl:
-        'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html',
       ),
       body: Center(
         child: Column(
@@ -35,13 +33,11 @@ class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPag
                   maintainAnimation: true,
                   child: LinearProgressIndicator(
                     backgroundColor: Colors.grey,
-                  )
-              ),
+                  )),
             ),
             SizedBox(height: 32.0),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: ProximityColors.secondaryBlue),
+              style: ElevatedButton.styleFrom(backgroundColor: ProximityColors.secondaryBlue),
               onPressed: () {
                 setState(() {
                   _isShow = !_isShow;

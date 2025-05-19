@@ -13,9 +13,7 @@ class UserRemoteDataSource {
   UserRemoteDataSource(this._cloudFirestoreService);
   final CloudFirestoreService _cloudFirestoreService;
 
-  Future<void> setUser(
-      {required String userId, required Map<String, dynamic> data}) async {
-    await _cloudFirestoreService.setData(
-        path: FirestorePath.userPath(userId), data: data);
+  Future<void> setUser({required String userId, required Map<String, dynamic> data}) async {
+    await _cloudFirestoreService.setData(path: FirestorePath.userPath(userId), data: data);
   }
 }

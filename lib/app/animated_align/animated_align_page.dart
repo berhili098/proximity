@@ -18,8 +18,7 @@ class _AnimatedAlignPageState extends State<AnimatedAlignPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'AlignTransition',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/AlignTransition-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/AlignTransition-class.html',
       ),
       body: Center(
         child: Column(

@@ -37,8 +37,7 @@ class _IndexedStackPageState extends State<IndexedStackPage> {
     return Scaffold(
         appBar: CustomAppBar(
           title: 'IndexedStack',
-          documentUrl:
-              'https://api.flutter.dev/flutter/widgets/IndexedStack-class.html',
+          documentUrl: 'https://api.flutter.dev/flutter/widgets/IndexedStack-class.html',
           videoUrl: 'https://youtu.be/_O0PPD1Xfbks',
         ),
         body: IndexedStack(

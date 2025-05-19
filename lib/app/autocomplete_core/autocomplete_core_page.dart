@@ -40,18 +40,14 @@ class AutocompleteSample extends StatelessWidget {
           return const Iterable<String>.empty();
         }
         return _kOptions.where((String option) {
-          return option
-              .toLowerCase()
-              .startsWith(textEditingValue.text.toLowerCase());
+          return option.toLowerCase().startsWith(textEditingValue.text.toLowerCase());
         }).toList();
       },
-      fieldViewBuilder:
-          (context, textEditingController, focusNode, onFieldSubmitted) {
+      fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
         return TextFormField(
           controller: textEditingController,
           focusNode: focusNode,
-          decoration:
-              InputDecoration(hintText: 'Input query here "a" to "e"...'),
+          decoration: InputDecoration(hintText: 'Input query here "a" to "e"...'),
         );
       },
     );

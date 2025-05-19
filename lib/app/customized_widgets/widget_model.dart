@@ -47,8 +47,7 @@ class WidgetModel {
 
   String toJson() => json.encode(toMap());
 
-  factory WidgetModel.fromJson(String source) =>
-      WidgetModel.fromMap(json.decode(source));
+  factory WidgetModel.fromJson(String source) => WidgetModel.fromMap(json.decode(source));
 
   @override
   String toString() {

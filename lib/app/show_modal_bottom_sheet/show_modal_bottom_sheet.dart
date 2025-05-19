@@ -4,8 +4,7 @@ import 'package:proximity/constants/proximity_colors.dart';
 
 class ShowModalBottomSheetPage extends StatefulWidget {
   @override
-  _ShowModalBottomSheetPageState createState() =>
-      _ShowModalBottomSheetPageState();
+  _ShowModalBottomSheetPageState createState() => _ShowModalBottomSheetPageState();
 }
 
 class _ShowModalBottomSheetPageState extends State<ShowModalBottomSheetPage> {
@@ -14,14 +13,12 @@ class _ShowModalBottomSheetPageState extends State<ShowModalBottomSheetPage> {
     return Scaffold(
         appBar: CustomAppBar(
           title: 'ShowModalBottomSheet',
-          documentUrl:
-              'https://api.flutter.dev/flutter/material/showModalBottomSheet.html',
+          documentUrl: 'https://api.flutter.dev/flutter/material/showModalBottomSheet.html',
           isVideoAvailable: false,
         ),
         body: Center(
           child: ElevatedButton(
-            style:
-                ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
+            style: ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
             onPressed: () {
               buildShowModalBottomSheet(context);
             },
@@ -43,8 +40,7 @@ class _ShowModalBottomSheetPageState extends State<ShowModalBottomSheetPage> {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: ProximityColors.flutterBlue),
+                  style: ElevatedButton.styleFrom(backgroundColor: ProximityColors.flutterBlue),
                   onPressed: () => Navigator.pop(context),
                   child: const Text('close'),
                 )

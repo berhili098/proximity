@@ -18,8 +18,7 @@ class _AnimatedPositionedPageState extends State<AnimatedPositionedPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'AnimatedPositioned',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html',
         videoUrl: 'https://youtu.be/hC3s2YdtWt8',
       ),
       body: Center(

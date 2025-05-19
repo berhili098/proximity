@@ -4,8 +4,7 @@ import '../customized_widgets/custom_app_bar.dart';
 
 class FractionallySizedBoxPage extends StatefulWidget {
   @override
-  _FractionallySizedBoxPageState createState() =>
-      _FractionallySizedBoxPageState();
+  _FractionallySizedBoxPageState createState() => _FractionallySizedBoxPageState();
 }
 
 class _FractionallySizedBoxPageState extends State<FractionallySizedBoxPage> {
@@ -17,8 +16,7 @@ class _FractionallySizedBoxPageState extends State<FractionallySizedBoxPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'FractionallySizedBox',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/FractionallySizedBox-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/FractionallySizedBox-class.html',
         videoUrl: 'https://youtu.be/PEsY654EGZ0',
       ),
       body: Center(

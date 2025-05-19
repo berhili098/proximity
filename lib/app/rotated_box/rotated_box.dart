@@ -15,8 +15,7 @@ class _RotatedBoxPageState extends State<RotatedBoxPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'RotatedBox',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/RotatedBox-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/RotatedBox-class.html',
         videoUrl: 'https://www.youtube.com/watch?v=BFE6_UglLfQ',
       ),
       body: Column(

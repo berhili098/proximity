@@ -17,8 +17,7 @@ class _RadioListTilePageState extends State<RadioListTilePage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'RadioListTile',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/RadioListTile-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/RadioListTile-class.html',
       ),
       body: Center(
         child: Column(

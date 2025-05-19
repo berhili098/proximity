@@ -16,8 +16,7 @@ class SliverPage extends StatelessWidget {
             ListTileCard(
               page: SliverAppBarPage(),
               title: 'SliverAppBar',
-              text:
-                  'A material design app bar that integrates with a CustomScrollView.',
+              text: 'A material design app bar that integrates with a CustomScrollView.',
               chipList: ['null safety', 'video', 'widget'],
               gif: 'assets/gif/sliver_app_bar.gif',
             ),

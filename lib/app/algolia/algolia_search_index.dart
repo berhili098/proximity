@@ -210,8 +210,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'RadioListTile',
-      'description':
-          'A ListTile with a Radio. In other words, a radio button with a label.',
+      'description': 'A ListTile with a Radio. In other words, a radio button with a label.',
       'tag': [
         'null safety',
         'widget',
@@ -220,15 +219,13 @@ class AlgoliaIndex {
     },
     {
       'name': 'PackageInfoPlus',
-      'description':
-          'This Flutter plugin provides an API for querying information about an application package.',
+      'description': 'This Flutter plugin provides an API for querying information about an application package.',
       'tag': ['null safety', 'package'],
       'gif': 'assets/gif/package_info_plus.gif'
     },
     {
       'name': 'DeviceInfoPlus',
-      'description':
-          'Get current device information from within the Flutter application.',
+      'description': 'Get current device information from within the Flutter application.',
       'tag': [
         'null safety',
         'package',
@@ -237,8 +234,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'UrlLauncher',
-      'description':
-          'A Flutter plugin for launching a URL. Supports iOS, Android, web, Windows, macOS, and Linux.',
+      'description': 'A Flutter plugin for launching a URL. Supports iOS, Android, web, Windows, macOS, and Linux.',
       'tag': [
         'null safety',
         'package',
@@ -247,8 +243,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'FlutterProgressHud',
-      'description':
-          'Highly customizable modal progress indicator with fade animation.',
+      'description': 'Highly customizable modal progress indicator with fade animation.',
       'tag': [
         'null safety',
         'package',
@@ -257,8 +252,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'CircularProgressIndicator',
-      'description':
-      'A widget that shows progress along a circle.',
+      'description': 'A widget that shows progress along a circle.',
       'tag': [
         'null safety',
       ],
@@ -266,8 +260,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'LinearProgressIndicator',
-      'description':
-      'A widget that shows progress along a line.',
+      'description': 'A widget that shows progress along a line.',
       'tag': [
         'null safety',
       ],
@@ -284,15 +277,13 @@ class AlgoliaIndex {
     },
     {
       'name': 'AutocompleteCore',
-      'description':
-          'A widget, Autocomplete, that allows the user to select one option among many',
+      'description': 'A widget, Autocomplete, that allows the user to select one option among many',
       'tag': ['null safety', 'widget'],
       'gif': 'assets/gif/autocomplete.gif'
     },
     {
       'name': 'AnimatedContainer',
-      'description':
-          'Animated version of Container that gradually changes its values over a period of time.',
+      'description': 'Animated version of Container that gradually changes its values over a period of time.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/animated_container.gif'
     },
@@ -312,8 +303,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'ReorderableListView',
-      'description':
-          'A list whose items the user can interactively reorder by dragging.',
+      'description': 'A list whose items the user can interactively reorder by dragging.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/reorderable_list_view.gif'
     },
@@ -332,8 +322,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'Flexible',
-      'description':
-          'A widget that controls how a child of a Row, Column, or Flex flexes.',
+      'description': 'A widget that controls how a child of a Row, Column, or Flex flexes.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/flexible.gif'
     },
@@ -346,29 +335,25 @@ class AlgoliaIndex {
     },
     {
       'name': 'FractionallySizedBox',
-      'description':
-          'A widget that sizes its child to a fraction of the total available space.',
+      'description': 'A widget that sizes its child to a fraction of the total available space.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/fractionally_sized_box.gif'
     },
     {
       'name': 'IndexedStack',
-      'description':
-          'A Stack that shows a single child from a list of children.',
+      'description': 'A Stack that shows a single child from a list of children.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/indexed_stack.gif'
     },
     {
       'name': 'Sliver',
-      'description':
-          'A sliver is a portion of a scrollable area that you can define to behave in a special way.',
+      'description': 'A sliver is a portion of a scrollable area that you can define to behave in a special way.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/sliver_app_bar.gif'
     },
     {
       'name': 'SliverAppBar',
-      'description':
-          'A material design app bar that integrates with a CustomScrollView.',
+      'description': 'A material design app bar that integrates with a CustomScrollView.',
       'tag': ['null safety', 'widget', 'video'],
       'gif': 'assets/gif/sliver_app_bar.gif'
     },
@@ -393,15 +378,13 @@ class AlgoliaIndex {
     },
     {
       'name': 'Table',
-      'description':
-          'A widget that uses the table layout algorithm for its children.',
+      'description': 'A widget that uses the table layout algorithm for its children.',
       'tag': ['null safety', 'video', 'widget'],
       'gif': 'assets/gif/table.gif'
     },
     {
       'name': 'SwitchListTile',
-      'description':
-          'A ListTile with a Switch. In other words, a switch with a label.',
+      'description': 'A ListTile with a Switch. In other words, a switch with a label.',
       'tag': ['null safety', 'video', 'widget'],
       'gif': 'assets/gif/switch_list_tile.gif'
     },
@@ -413,8 +396,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'RotatedBox',
-      'description':
-          'A widget that rotates its child by a integral number of quarter turns.',
+      'description': 'A widget that rotates its child by a integral number of quarter turns.',
       'tag': ['null safety', 'video', 'widget'],
       'gif': 'assets/gif/rotated_box.gif'
     },
@@ -432,8 +414,7 @@ class AlgoliaIndex {
     },
     {
       'name': 'PhysicalModel',
-      'description':
-          'A widget representing a physical layer that clips its children to a shape.',
+      'description': 'A widget representing a physical layer that clips its children to a shape.',
       'tag': ['null safety', 'video', 'widget'],
       'gif': 'assets/gif/physical_model.gif'
     },

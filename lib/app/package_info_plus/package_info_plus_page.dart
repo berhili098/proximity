@@ -10,8 +10,7 @@ class PackageInfoPlusPage extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'PackageInfoPlus',
-        documentUrl:
-            'https://plus.fluttercommunity.dev/docs/package_info_plus/usage',
+        documentUrl: 'https://plus.fluttercommunity.dev/docs/package_info_plus/usage',
       ),
       body: Center(
         child: ElevatedButton(

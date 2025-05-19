@@ -8,8 +8,7 @@ class ScrollbarPage extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'RotatedBox',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/Scrollbar-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/Scrollbar-class.html',
         videoUrl: 'https://www.youtube.com/watch?v=DbkIQSvwnZc',
       ),
       body: Scrollbar(

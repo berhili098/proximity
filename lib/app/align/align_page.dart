@@ -69,10 +69,7 @@ class _AlignPageState extends State<AlignPage> {
                     itemCount: SampleAlignment.values.length,
                     itemBuilder: (context, index) {
                       return RadioListTile<SampleAlignment>(
-                        title: Text(SampleAlignment.values[index]
-                            .toString()
-                            .split('.')
-                            .last),
+                        title: Text(SampleAlignment.values[index].toString().split('.').last),
                         value: SampleAlignment.values[index],
                         groupValue: _position,
                         onChanged: (SampleAlignment? value) {

@@ -65,8 +65,7 @@ class _AlgoliaPageState extends State<AlgoliaPage> {
                             var snap = _results[index];
                             final data = snap.data;
                             final widget = WidgetModel.fromMap(data);
-                            final page =
-                                AlgoliaSearchIndex.retrieveWidget(widget.name);
+                            final page = AlgoliaSearchIndex.retrieveWidget(widget.name);
 
                             return ListTileCard(
                               page: page,

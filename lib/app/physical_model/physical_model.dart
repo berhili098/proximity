@@ -15,8 +15,7 @@ class _PhysicalModelPageState extends State<PhysicalModelPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'PhysicalModel',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/PhysicalModel-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/PhysicalModel-class.html',
         videoUrl: 'https://www.youtube.com/watch?v=XgUOSS30OQk',
       ),
       body: Center(

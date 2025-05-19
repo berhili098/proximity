@@ -20,16 +20,14 @@ class _ExpandedPageState extends State<ExpandedPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'Expanded',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/Expanded-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/Expanded-class.html',
         videoUrl: 'https://youtu.be/_rnZaagadyo',
       ),
       body: Center(
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(
-                  top: 40, right: 8.0, left: 8.0, bottom: 50),
+              padding: const EdgeInsets.only(top: 40, right: 8.0, left: 8.0, bottom: 50),
               child: Slider(
                 value: _widthValue,
                 min: 1,

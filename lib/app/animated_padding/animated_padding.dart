@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:proximity/app/customized_widgets/custom_app_bar.dart';
 import 'package:proximity/constants/proximity_colors.dart';
@@ -21,8 +20,7 @@ class _AnimatedPaddingPageState extends State<AnimatedPaddingPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'AnimatedPadding',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html',
         videoUrl: 'https://youtu.be/PY2m0fhGNz4',
         isVideoAvailable: true,
       ),
@@ -49,8 +47,7 @@ class _AnimatedPaddingPageState extends State<AnimatedPaddingPage> {
           SizedBox(height: 20),
           Text('Padding: $padValue'),
           ElevatedButton(
-            style:
-                ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
+            style: ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
             onPressed: () {
               _updatePadding(padValue == 0.0 ? 80.0 : 0.0);
             },

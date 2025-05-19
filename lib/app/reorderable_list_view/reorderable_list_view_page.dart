@@ -3,8 +3,7 @@ import 'package:proximity/app/customized_widgets/custom_app_bar.dart';
 
 class ReorderableListViewPage extends StatefulWidget {
   @override
-  _ReorderableListViewPageState createState() =>
-      _ReorderableListViewPageState();
+  _ReorderableListViewPageState createState() => _ReorderableListViewPageState();
 }
 
 class _ReorderableListViewPageState extends State<ReorderableListViewPage> {
@@ -14,8 +13,7 @@ class _ReorderableListViewPageState extends State<ReorderableListViewPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'ReorderableListView',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/ReorderableListView-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/ReorderableListView-class.html',
         videoUrl: 'https://youtu.be/3fB1mxOsqJE',
       ),
       body: Scrollbar(
@@ -34,8 +32,7 @@ class _ReorderableListViewPageState extends State<ReorderableListViewPage> {
             for (int index = 0; index < _items.length; index++)
               ListTile(
                 key: Key('$index'),
-                tileColor:
-                    _items[index].isOdd ? Color(0xFF02569B) : Color(0xFF0175C2),
+                tileColor: _items[index].isOdd ? Color(0xFF02569B) : Color(0xFF0175C2),
                 title: Text('Item ${_items[index]}'),
                 trailing: Icon(Icons.drag_handle),
               ),

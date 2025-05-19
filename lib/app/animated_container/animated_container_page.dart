@@ -15,8 +15,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'AnimatedContainer',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html',
         isVideoAvailable: true,
         videoUrl: 'https://youtu.be/yI-8QHpGIP4',
       ),
@@ -32,9 +31,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
             elevation: 10,
             child: AnimatedContainer(
               decoration: BoxDecoration(
-                color: _selected
-                    ? ProximityColors.secondaryBlue
-                    : ProximityColors.flutterBlue,
+                color: _selected ? ProximityColors.secondaryBlue : ProximityColors.flutterBlue,
                 border: Border.all(
                   width: 3.0,
                   color: Colors.transparent,

@@ -20,8 +20,7 @@ class _SliderPageState extends State<SliderPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'Slider',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/Slider-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/Slider-class.html',
         videoUrl: 'https://youtu.be/ufb4gIPDmEs',
       ),
       body: Center(
@@ -60,8 +59,7 @@ class _SliderPageState extends State<SliderPage> {
                   values: _rangeValues,
                   min: 0,
                   max: 100,
-                  labels: RangeLabels(
-                      '${_rangeValues.start}', '${_rangeValues.end}'),
+                  labels: RangeLabels('${_rangeValues.start}', '${_rangeValues.end}'),
                   onChanged: (newRange) {
                     setState(() {
                       _rangeValues = newRange;

@@ -36,8 +36,7 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'ExpansionPanel',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/ExpansionPanel-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/ExpansionPanel-class.html',
         videoUrl: 'https://youtu.be/2aJZzRMziJc',
       ),
       body: SingleChildScrollView(
@@ -58,13 +57,11 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
                 },
                 body: ListTile(
                     title: Text(item.expandedValue),
-                    subtitle: const Text(
-                        'To delete this panel, tap the trash can icon'),
+                    subtitle: const Text('To delete this panel, tap the trash can icon'),
                     trailing: const Icon(Icons.delete),
                     onTap: () {
                       setState(() {
-                        _data.removeWhere(
-                            (Item currentItem) => item == currentItem);
+                        _data.removeWhere((Item currentItem) => item == currentItem);
                       });
                     }),
                 isExpanded: item.isExpanded,

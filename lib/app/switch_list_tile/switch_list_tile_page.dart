@@ -16,8 +16,7 @@ class _SwitchListTilePageState extends State<SwitchListTilePage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'SwitchListTile',
-        documentUrl:
-            'https://api.flutter.dev/flutter/material/SwitchListTile-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/material/SwitchListTile-class.html',
         videoUrl: 'https://youtu.be/0igIjvtEWNU',
       ),
       body: Column(

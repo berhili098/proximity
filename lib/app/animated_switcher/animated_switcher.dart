@@ -15,8 +15,7 @@ class _AnimatedSwitcherPageState extends State<AnimatedSwitcherPage> {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'AnimatedSwitcher',
-        documentUrl:
-            'https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html',
+        documentUrl: 'https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html',
         videoUrl: 'https://youtu.be/2W7POjFb88g',
       ),
       body: Center(
