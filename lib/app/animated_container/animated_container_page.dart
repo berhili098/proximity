@@ -11,7 +11,6 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   var _selected = false;
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: CustomAppBar(

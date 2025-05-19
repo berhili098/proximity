@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,8 +13,8 @@ import 'home_view_model.dart';
 class HomePage extends ConsumerWidget {
   // final algoliaList = AlgoliaSearchIndex.fromMap(AlgoliaIndex.index);
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    final viewModel = watch(homeViewModelProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final viewModel = ref.watch(homeViewModelProvider);
     final algoliaDataList = AlgoliaIndex.index;
     final dataList =
         algoliaDataList.map((e) => AlgoliaSearchIndex.fromMap(e)).toList();
@@ -62,7 +61,8 @@ class HomePage extends ConsumerWidget {
         ));
   }
 
-  void _launchURL(String _url) async => await canLaunch(_url)
-      ? await launch(_url)
-      : throw 'Could not launch $_url';
+  void _launchURL(String _url) async {
+    final uri = Uri.parse(_url);
+    await canLaunchUrl(uri) ? await launchUrl(uri) : throw 'Could not launch $_url';
+  }
 }

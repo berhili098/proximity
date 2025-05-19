@@ -41,7 +41,7 @@ class _LinearProgressIndicatorPageState extends State<LinearProgressIndicatorPag
             SizedBox(height: 32.0),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  primary: ProximityColors.secondaryBlue),
+                  backgroundColor: ProximityColors.secondaryBlue),
               onPressed: () {
                 setState(() {
                   _isShow = !_isShow;

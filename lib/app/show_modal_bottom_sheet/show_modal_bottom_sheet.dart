@@ -21,7 +21,7 @@ class _ShowModalBottomSheetPageState extends State<ShowModalBottomSheetPage> {
         body: Center(
           child: ElevatedButton(
             style:
-                ElevatedButton.styleFrom(primary: ProximityColors.primaryBlue),
+                ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
             onPressed: () {
               buildShowModalBottomSheet(context);
             },
@@ -44,7 +44,7 @@ class _ShowModalBottomSheetPageState extends State<ShowModalBottomSheetPage> {
               children: <Widget>[
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: ProximityColors.flutterBlue),
+                      backgroundColor: ProximityColors.flutterBlue),
                   onPressed: () => Navigator.pop(context),
                   child: const Text('close'),
                 )

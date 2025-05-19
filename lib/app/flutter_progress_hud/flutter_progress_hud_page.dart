@@ -22,7 +22,7 @@ class FlutterProgressHudPage extends StatelessWidget {
               children: <Widget>[
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: ProximityColors.secondaryBlue),
+                      backgroundColor: ProximityColors.secondaryBlue),
                   onPressed: () {
                     final progress = ProgressHUD.of(context);
                     progress!.show();
@@ -34,7 +34,7 @@ class FlutterProgressHudPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      primary: ProximityColors.secondaryBlue),
+                      backgroundColor: ProximityColors.secondaryBlue),
                   onPressed: () {
                     final progress = ProgressHUD.of(context);
                     progress!.showWithText('Loading...');

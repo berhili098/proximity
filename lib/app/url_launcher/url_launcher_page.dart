@@ -16,7 +16,7 @@ class UrlLauncherPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           style:
-              ElevatedButton.styleFrom(primary: ProximityColors.secondaryBlue),
+              ElevatedButton.styleFrom(backgroundColor: ProximityColors.secondaryBlue),
           onPressed: () => _launchURL('https://github.com/mafreud/proximity'),
           child: Text('launch! 🚀🚀'),
         ),
@@ -24,7 +24,8 @@ class UrlLauncherPage extends StatelessWidget {
     );
   }
 
-  void _launchURL(String _url) async => await canLaunch(_url)
-      ? await launch(_url)
-      : throw 'Could not launch $_url';
+   void _launchURL(String _url) async {
+    final uri = Uri.parse(_url);
+    await canLaunchUrl(uri) ? await launchUrl(uri) : throw 'Could not launch $_url';
+  }
 }

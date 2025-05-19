@@ -54,9 +54,9 @@ class SliverListAndSliverGridViewPage extends StatelessWidget {
         ));
   }
 
-  final _documentUrl =
-      'https://flutter.dev/docs/development/ui/advanced/slivers';
-  final _videoUrl = 'https://www.youtube.com/watch?v=ORiTTaVY6mM';
+  // final _documentUrl =
+  //     'https://flutter.dev/docs/development/ui/advanced/slivers';
+  // final _videoUrl = 'https://www.youtube.com/watch?v=ORiTTaVY6mM';
 
   // void _launchURL(String _url) async => await canLaunch(_url)
   //     ? await launch(_url)

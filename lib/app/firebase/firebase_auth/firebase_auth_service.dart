@@ -28,9 +28,8 @@ class FirebaseAuthService {
     return loginState;
   }
 
-  Future<void> registerEmailAndPassword(
-      {required String email, required String password}) async {
-    await _firebaseAuth.currentUser!.updateEmail(email);
+  Future<void> registerEmailAndPassword({required String email, required String password}) async {
+    await _firebaseAuth.currentUser!.verifyBeforeUpdateEmail(email);
     await _firebaseAuth.currentUser!.updatePassword(password);
   }
 
@@ -60,6 +59,6 @@ class FirebaseAuthService {
   }
 
   Future<void> setDisplayName(String displayName) async {
-    await _firebaseAuth.currentUser!.updateProfile(displayName: displayName);
+    await _firebaseAuth.currentUser!.updateDisplayName(displayName);
   }
 }

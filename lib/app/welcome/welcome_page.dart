@@ -8,9 +8,9 @@ import 'welcome_view_model.dart';
 
 class WelcomePage extends ConsumerWidget {
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final viewModel = watch(welcomeViewModelProvider);
+    final viewModel = ref.watch(welcomeViewModelProvider);
     return ProgressHUD(
       child: Builder(builder: (context) {
         return Scaffold(
@@ -28,7 +28,7 @@ class WelcomePage extends ConsumerWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blue,
+                    backgroundColor: Colors.blue,
 
                     elevation: 3,
                     minimumSize: Size(110, 37), //////// HERE
@@ -37,8 +37,7 @@ class WelcomePage extends ConsumerWidget {
                     final progress = ProgressHUD.of(context);
                     progress!.show();
                     await viewModel.signUp();
-                    await Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => HomePage()));
+                    await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
                     progress.dismiss();
                   },
                   child: Text('Get Started'),
@@ -46,8 +45,7 @@ class WelcomePage extends ConsumerWidget {
                 SizedBox(height: 20),
                 InkWell(
                   onTap: () {
-                    _launchURL(
-                        'https://www.privacypolicies.com/live/08ba4ed6-16f0-4327-b25a-3c4b2ba463fa');
+                    _launchURL('https://www.privacypolicies.com/live/08ba4ed6-16f0-4327-b25a-3c4b2ba463fa');
                   },
                   child: const Text(
                     'By Tapping Get Started \nyou are agreeing to the Terms and Conditions.',
@@ -62,7 +60,8 @@ class WelcomePage extends ConsumerWidget {
     );
   }
 
-  void _launchURL(String _url) async => await canLaunch(_url)
-      ? await launch(_url)
-      : throw 'Could not launch $_url';
+  void _launchURL(String _url) async {
+    final uri = Uri.parse(_url);
+    await canLaunchUrl(uri) ? await launchUrl(uri) : throw 'Could not launch $_url';
+  }
 }

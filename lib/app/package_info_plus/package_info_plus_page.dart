@@ -15,7 +15,7 @@ class PackageInfoPlusPage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          style: ElevatedButton.styleFrom(primary: ProximityColors.flutterBlue),
+          style: ElevatedButton.styleFrom(backgroundColor: ProximityColors.flutterBlue),
           onPressed: () async {
             await _showDialog(context, await PackageInfo.fromPlatform());
           },

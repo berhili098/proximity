@@ -11,8 +11,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   late ListModel<int> _list;
   int? _selectedItem;
-  late int
-      _nextItem; // The next item inserted when the user presses the '+' button.
+  late int _nextItem; // The next item inserted when the user presses the '+' button.
 
   @override
   void initState() {
@@ -26,8 +25,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
   }
 
   // Used to build list items that haven't been removed.
-  Widget _buildItem(
-      BuildContext context, int index, Animation<double> animation) {
+  Widget _buildItem(BuildContext context, int index, Animation<double> animation) {
     return CardItem(
       animation: animation,
       item: _list[index],
@@ -46,8 +44,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
   // concerned). The widget will be used by the
   // [AnimatedListState.removeItem] method's
   // [AnimatedListRemovedItemBuilder] parameter.
-  Widget _buildRemovedItem(
-      int item, BuildContext context, Animation<double> animation) {
+  Widget _buildRemovedItem(int item, BuildContext context, Animation<double> animation) {
     return CardItem(
       animation: animation,
       item: item,
@@ -58,8 +55,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
 
   // Insert the "next item" into the list model.
   void _insert() {
-    final int index =
-        _selectedItem == null ? _list.length : _list.indexOf(_selectedItem!);
+    final index = _selectedItem == null ? _list.length : _list.indexOf(_selectedItem!);
     _list.insert(index, _nextItem++);
   }
 
@@ -105,8 +101,7 @@ class _AnimatedListPageState extends State<AnimatedListPage> {
   }
 }
 
-typedef RemovedItemBuilder = Widget Function(
-    int item, BuildContext context, Animation<double> animation);
+typedef RemovedItemBuilder = Widget Function(int item, BuildContext context, Animation<double> animation);
 
 /// Keeps a Dart [List] in sync with an [AnimatedList].
 ///
@@ -136,7 +131,7 @@ class ListModel<E> {
   }
 
   E removeAt(int index) {
-    final E removedItem = _items.removeAt(index);
+    final removedItem = _items.removeAt(index);
     if (removedItem != null) {
       _animatedList!.removeItem(
         index,
@@ -168,7 +163,7 @@ class CardItem extends StatelessWidget {
     this.selected = false,
     required this.animation,
     required this.item,
-  })   : assert(item >= 0),
+  })  : assert(item >= 0),
         super(key: key);
 
   final Animation<double> animation;
@@ -178,9 +173,8 @@ class CardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle textStyle = Theme.of(context).textTheme.headline4!;
-    if (selected)
-      textStyle = textStyle.copyWith(color: Colors.lightGreenAccent[400]);
+    final textStyle = Theme.of(context).textTheme.headlineMedium!;
+
     return Padding(
       padding: const EdgeInsets.all(2.0),
       child: SizeTransition(
@@ -194,7 +188,8 @@ class CardItem extends StatelessWidget {
             child: Card(
               color: Colors.primaries[item % Colors.primaries.length],
               child: Center(
-                child: Text('Item $item', style: textStyle),
+                child: Text('Item $item',
+                    style: textStyle.copyWith(color: selected ? Colors.lightGreenAccent[400] : null)),
               ),
             ),
           ),

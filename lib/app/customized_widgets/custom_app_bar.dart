@@ -43,9 +43,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     );
   }
 
-  void _launchURL(String _url) async => await canLaunch(_url)
-      ? await launch(_url)
-      : throw 'Could not launch $_url';
+  void _launchURL(String _url) async {
+    final uri = Uri.parse(_url);
+    await canLaunchUrl(uri) ? await launchUrl(uri) : throw 'Could not launch $_url';
+  }
 
   @override
   Size get preferredSize => Size.fromHeight(appBar.preferredSize.height);

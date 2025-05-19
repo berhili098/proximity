@@ -31,8 +31,8 @@ class MyApp extends StatelessWidget {
 
 class _AuthFlowWidget extends ConsumerWidget {
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    final authState = watch(authStateProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authStateProvider);
     return authState.when(
       data: (user) => _data(context, user),
       loading: () => const Scaffold(

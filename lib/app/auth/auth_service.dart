@@ -25,7 +25,7 @@ class AuthService {
     final userId = await _firebaseAuthService.signUpAnonymously();
     await _userService.setUser(userId);
     await _fcmService.requestPermission();
-    final token = await _fcmService.fcmToken;
+    // final token = await _fcmService.fcmToken;
     await _fcmService.saveTokenToFirestore(userId);
   }
 

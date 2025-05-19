@@ -77,10 +77,10 @@ class SliverAppBarPage extends StatelessWidget {
     );
   }
 
-  final _documentUrl =
-      'https://flutter.dev/docs/development/ui/advanced/slivers';
+  // final _documentUrl =
+  //     'https://flutter.dev/docs/development/ui/advanced/slivers';
 
-  final _videoUrl = 'https://www.youtube.com/watch?v=mSc7qFzxHDw';
+  // final _videoUrl = 'https://www.youtube.com/watch?v=mSc7qFzxHDw';
 
   // void _launchURL(String _url) async => await canLaunch(_url)
   //     ? await launch(_url)

@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:proximity/app/customized_widgets/custom_app_bar.dart';
@@ -51,7 +50,7 @@ class _AnimatedPaddingPageState extends State<AnimatedPaddingPage> {
           Text('Padding: $padValue'),
           ElevatedButton(
             style:
-                ElevatedButton.styleFrom(primary: ProximityColors.primaryBlue),
+                ElevatedButton.styleFrom(backgroundColor: ProximityColors.primaryBlue),
             onPressed: () {
               _updatePadding(padValue == 0.0 ? 80.0 : 0.0);
             },
